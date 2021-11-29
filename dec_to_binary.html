@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen-Ting Wang</title>
+</head>
+
+<script>
+    alert('早安您好，我是AI人工智障，很高興為您服務')
+</script>
+
+<script>
+    function DisplayInput(){
+        var nWNumber=document.getElementById("wnum").value;
+        alert(nWNumber)
+    }
+
+    function ShowResult(){
+        var nWNumber=document.getElementById("wnum").value;
+        document.getElementById("result").innerHTML=nWNumber;
+    }
+
+    function isEven(num) {
+        var str = parseInt(num).toString(2);
+        document.write(str);
+    }
+    
+    
+    function onBtnClkSubmit() {
+        var a=nWNumber=document.getElementById("wnum").value;
+        var b=isEven(a);
+        document.getElementById("result").innerHTML=b;
+    }
+</script>
+
+<body>
+    <label for="wnum">請輸入一個正整數</label>
+    <input type="text" id="wnum"name="wnum"><br><br>
+    <button type="button" onclick="onBtnClkSubmit();">Submit</button>
+    <p id="result">結果將在這顯示...</p>
+</body>
+</html>
